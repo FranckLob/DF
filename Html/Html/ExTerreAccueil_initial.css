@@ -1,0 +1,205 @@
+
+/* COMMENT FAIRE POUR QUE SI ON ZOOME LE SITE CONSERVE LA MEME ALLURE */
+
+/* polices de caractères pour toute la page */
+html {
+  /* police de caractères = font-family: ; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*couleur de fond et couleur de police par défaut du header et de la 1ère section */
+.b24 {
+    /* couleur de fond : background-color */
+    background-color: #b24a50;
+    color : #fff;
+}
+
+header {
+  width: 60%;
+  margin : auto;
+}
+
+/* INLINE-BLOCK ou FLEXBOX ??? */
+/* organisation du header en inline-block */
+/* display: inline-block;
+  par defaut aligne en bas; vertical-align pour ajuster */
+#epic, nav {
+  display: inline-block;
+}
+
+nav {
+  /* positionnement de nav et il faut l'accompagner de right, top, ... */
+  /* positionnement relative et 1095 - 138 (img) - 440 (nav) = 517 */
+  /* AUTRE SOLUTION ??? */
+  position: relative;
+  left: 517px;
+}
+
+/* gestion de l'affichage des choix (utilisation de Flexbox) */ 
+nav ul {
+  /* display flex sur nav>ul ou dislay:inline-block sur nav>ul>li */
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  text-align: center;
+  /* mise en gras : font-weight: bold; */
+  font-weight : bold;
+  color:#8c3034;  }
+
+nav ul li {
+  width: 100px;
+  font-size: 14px;
+  /* pas de "bullet points" */
+  list-style-type: none;
+}
+
+/* surlignage de home pour qu'il soit toujours actif */
+#home {
+  background-color: white;
+}
+
+/* au survol, les liens sont surlignés */
+/* attention ici on a ajouté des balises <a> pour simuler des liens */
+nav ul li :hover {
+  background-color: white;
+}
+
+/* PIXELS AU LIEU DE % ??? */
+#section1 {
+  /* hauteur,largeur du block-size: height,width:  */
+    height : 500px;
+    /* image de fond : background-image: ; */
+    background-image: url("bg-rouge.png");
+    /* fixer le fond : background-attachment: ;
+    background-attachment: fixed;
+    1 seule image background-repeat: no-repeat */
+    background-repeat: no-repeat;
+    /* pour  background-size c'est largeur,hauteur */
+    background-size: 2000px 500px;
+}
+
+#section1 > h1 {
+  /* taille = font-size: ; */
+    font-size: 38px;
+    /* alignement du texte : text-align: ; */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#section1 > p {
+  /* le paragraphe prend 60% de la page en largeur et on applique au bloc une marge de 20% à gauche : il est ainsi centré */
+  /* ou pour centrer on met margin:auto après avoir donner une largeur width au bloc */
+  width: 60%;
+  margin : auto;
+  /* taille = font-size: ; */
+    font-size: 14px;
+    /* alignement du texte : text-align:justify = idem en lagage écrit français; center pour ajuster le contenu */
+    text-align:center;
+}
+
+#section1 h2 {
+  color:#8c3034;
+}
+
+/* positionnement en inline-block des 4 articles*/
+#article1,#article2,#article3,#article4 {
+  display: inline-block;
+  text-align: center;
+  /* 14% de la largeur pour chaque block */
+  width: 14%;
+  /* petite marge entre le texte et les 4 colonnes */
+  margin-top: 1%;
+  background-color: #c35058;
+}
+
+/* pour centrer les 4 blocs on fixe une marge au bloc le plus a gauche */
+#article1 {
+  margin-left: 20%;
+}
+
+/* pour ajuster la marge à droite et donc centre par rapport à la section suivante */
+#article1,#article2,#article3 {
+  margin-right: 1%; 
+}
+
+/* pour ajuster la taille des pictogrammes */
+/* et on laisse un peu de marge au dessus */
+.picto {
+  width: 50%;
+  height: auto;
+  margin-top: 5%;
+}
+
+/*couleur de fond de la 2ème section */
+.f0e {
+  /* couleur de fond : background-color */
+  background-color: #f0efea;
+}
+
+/* on fait une classe commune aux sections 2 et 3 avec le titre et le paragraphe pour avoir un bloc avec les deux et un autre bloc avec l'image */
+.sections2et3 {
+  display : flex;
+  flex-direction: row;
+  width: 60%;
+  margin: auto;
+}
+
+.txtsect2et3 {
+  /* pour centrer au milieu */
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+/* comme pour les pictos on ajuste et on laisse de la marge (ici en dessous en plus) */
+#yony {
+  width: 20%;
+  height: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/*couleur de fond de la 3ème section */
+.e8e {
+  background-color: #e8e5dc;
+}
+
+/* on ajuste un peu la taille de l'image de l'iphone */
+#iphone {
+  width: 50%;
+  height: auto; 
+}
+
+#section4 {
+  height : 500px;
+  background-image: url("paris.jpg");
+  background-repeat: no-repeat;
+  /* pour que la photo soit sur toute la largeur et la hauteur */
+  background-size: 100% 100%;
+  color : #fff;
+  text-align: center;
+}
+
+#section4 > h1 {
+  margin-top: 0px;
+  text-transform: uppercase;
+  /*pour ne pas coller sur le bord supérieur de la section on joue la valeur du padding */
+  padding-top: 5%;
+}
+
+#meetus {
+  text-transform: uppercase;
+  /* super-propriété border (épaisseur, couleur, type) */
+  border: 1px #fff solid;
+  /* pour réduire la taille du bloc contenant "meet us" */
+  width: 5%;
+  margin: auto;
+}
+
+/* au survol, les liens sont surlignés */
+/* attention ici on a ajouté des balises <a> pour simuler des liens */
+/* on met un block sinon le surlignage s'applique uniquement entre les balises a A VOIR */
+#meetus :hover {
+  display:block;
+  background-color: white;
+  color:#8c3034;
+}

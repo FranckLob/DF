@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="149d7af2-8c6e-4fe6-b964-150b83af8fbf" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SWDVbG81UmyR1lEuVDlsBGDamO" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="StatsBooks" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="149d7af2-8c6e-4fe6-b964-150b83af8fbf" name="Default Changelist" comment="" />
+      <created>1571670482976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571670482976</updated>
+      <workItem from="1571670490991" duration="1414000" />
+      <workItem from="1571726433437" duration="17746000" />
+      <workItem from="1571812908371" duration="103000" />
+      <workItem from="1571813027113" duration="117000" />
+      <workItem from="1571813541793" duration="17491000" />
+      <workItem from="1571899350302" duration="19651000" />
+      <workItem from="1571986123728" duration="14909000" />
+      <workItem from="1572247688471" duration="18251000" />
+      <workItem from="1572333920579" duration="9603000" />
+      <workItem from="1572509062055" duration="6734000" />
+      <workItem from="1574067564849" duration="757000" />
+      <workItem from="1574673638632" duration="131000" />
+      <workItem from="1574679148936" duration="19000" />
+      <workItem from="1574679184634" duration="22000" />
+      <workItem from="1574683626478" duration="27000" />
+      <workItem from="1574683975929" duration="18000" />
+      <workItem from="1574688652388" duration="612000" />
+      <workItem from="1574753867355" duration="3494000" />
+      <workItem from="1574844921857" duration="585000" />
+      <workItem from="1574928832702" duration="1279000" />
+      <workItem from="1575013194014" duration="597000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
