@@ -44,7 +44,6 @@ public class GroundDAO {
 
     //UPDATE MANAPOINTS : paramètres = la nouvelle valeur de manapoints, l'instance de Ground à modifier; on retourne le nombre d'occurences impactées
     public int updateManapoints(int manaPoints, Ground gr) {
-        int nbUpdatedRows=0;
         try (PreparedStatement ps = c.prepareStatement("UPDATE ground SET manapoints=? WHERE color=? AND manapoints=?")) {
             //on remplace chaque ? par une valeur puis on exécute
             ps.setInt(1,manaPoints);
@@ -60,7 +59,6 @@ public class GroundDAO {
 
     //UPDATE COLOR : paramètres = la nouvelle valeur de color, l'instance de Ground à modifier; on retourne le nombre d'occurences impactées
     public int updateColor(GroundColor grColor, Ground gr) {
-        int nbUpdatedRows=0;
         try (PreparedStatement ps = c.prepareStatement("UPDATE ground SET color=? WHERE color=? AND manapoints=?")) {
             //on remplace chaque ? par une valeur puis on exécute
             //2 utilisations de mapGroundColorToString, méthode surchargée
@@ -77,7 +75,6 @@ public class GroundDAO {
 
     //DELETE; on retourne le nombre d'occurences impactées
     public int delete(Ground gr) {
-        int nbUpdatedRows=0;
         try (PreparedStatement ps = c.prepareStatement("DELETE FROM ground WHERE  color=? AND manapoints=?")) {
             //on remplace chaque ? par une valeur puis on exécute
             ps.setString(1,mapGroundColorToString(gr));
@@ -93,7 +90,6 @@ public class GroundDAO {
 
     //dans la fonction ci-dessous on agit sur la table mais pas via un objet de classe Ground
     public int deleteId(int id) {
-        int nbUpdatedRows=0;
         try (PreparedStatement ps = c.prepareStatement("DELETE FROM ground WHERE id=?")) {
             //on remplace chaque ? par une valeur puis on exécute
             ps.setInt(1,id);

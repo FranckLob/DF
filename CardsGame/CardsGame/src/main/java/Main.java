@@ -42,7 +42,7 @@ public class Main {
             //==================
             //------------------
             // création d'une instance de GroundDAO pour effectuer les actions CRUD qui suivent
-            GroundDAO grDAO = new GroundDAO(conn);
+            //GroundDAO grDAO = new GroundDAO(conn);
             //------------------
             // insertion
             //Ground gr = new Ground(GroundColor.VERT,112);
@@ -63,6 +63,31 @@ public class Main {
             // suppression
             //Ground gr = new Ground(GroundColor.ROUGE,116);
             //System.out.println(grDAO.delete(gr));
+            //------------------
+            //==================
+            // CREATURE
+            //==================
+            //------------------
+            // création d'une instance de GroundDAO pour effectuer les actions CRUD qui suivent
+            //CreatureDAO crDAO = new CreatureDAO(conn);
+            //------------------
+            // insertion
+            //creature cr = new Creature(11,"troll",111,1111);
+            //crDAO.insert(cr);
+            //------------------
+            // lectures
+            //for (Creature cr : crDAO.selectAll()) {
+            //    cr.display();
+            //}
+            //------------------
+            // mises à jour
+            //Creature cr = new Creature(11,"troll",111,1111);
+            // mise à jour de name
+            //System.out.println(crDAO.updateName("cyclope",cr));
+            //------------------
+            // suppression
+            //Creature cr = new Creature(11,"cyclope",111,1111);
+            //System.out.println(crDAO.delete(cr));
             //------------------
             // sinon exception
         } catch (SQLException e) {
